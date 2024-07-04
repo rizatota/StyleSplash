@@ -1,0 +1,44 @@
+{% extends 'core/base.html'%}
+
+{% block tittle %} 
+    {{item.name}} 
+{% endblock  %}
+
+{% block content %} 
+    <div class="detail-container">
+        <div class="image">
+            <img src="{{item.image.url}}"  alt="cartItem">        
+        </div> 
+        <div class="infos">
+            <h1>{{item.name}} </h1>
+            <p><strong>Price:</strong>{{item.price}} </p>
+            <p><strong>Seller:</strong>{{item.created_by.username}} </p>
+            {% if item.description %}
+                <p><strong>Description:</strong>{{item.description}} </p>
+            {%endif%}
+            <a href="" class="btn btn-primary">Contact Seller </a>
+        </div>
+    </div>
+
+    <div class="products"> 
+        <h2>Related Items </h2>
+
+        <div class="item-container">
+            {% for item in related_items %}
+            <a href="{% url 'item:detail' item.id %}">
+            <div class="card" >
+                <img src="{{item.image.url}}" class="card-img-top" alt="cartItem">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+
+            {% endfor  %}
+            
+        </div>
+    </div>
+
+
+{% endblock  %}

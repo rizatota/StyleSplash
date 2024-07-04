@@ -1,0 +1,54 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.products h2{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.item-container .card {
+    width: 300px;
+    position: relative;
+    padding-bottom: 100px; 
+    box-sizing: border-box;
+}
+
+.item-container .card-body {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.category-container{
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+.category-container .card {
+    width: 300px;
+
+    box-sizing: border-box;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: center;
+}
+.detail-container img{
+    width: 300px;
+    height: 400px;
+}
