@@ -5,7 +5,7 @@ body{
 
 .products h2{
     text-align: center;
-    font-size: 800px;
+    font-size: 40px;
     padding-bottom: 10px;
 }
 .item-container {
@@ -54,9 +54,26 @@ body{
 }
 
 .form-input{
-    font-size: 50px;
+    margin: 15px 0;
+    text-align: start;
 }
-form{
-    width: 700p;
+.form-input label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-input input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: black;
+}
+.signup-container{
+    justify-content: center;
+}
+.signup-container form{
+    width: 400px;
     margin: 0 auto;
+    padding: 50px;
+    background-color: bisque;
+    
 }
