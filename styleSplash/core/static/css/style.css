@@ -35,13 +35,13 @@ a{
     padding: 10px;
 }
 
-.category-container{
+.categories{
     width: 1000px;
     display: flex;
     margin: 0 auto;
     gap: 30px;
 }
-.category-container .card {
+.categories .card {
     width: 300px;
 
     box-sizing: border-box;
@@ -79,4 +79,21 @@ a{
     padding: 50px;
     background-color: bisque;
     
+}
+
+.category-container{
+    padding: 50px 0;
+}
+.products{
+    padding: 50px 0;
+}
+li{
+    list-style-type: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+ul{
+    margin: 0;
+    padding: 0;
 }
